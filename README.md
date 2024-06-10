@@ -28,39 +28,39 @@ Additionally, the Google Books API search engine reads in a search string and up
 
 When you first load the application, you will see a header with the navigation bar texts 'Google Books Search', 'Search For Books' and 'Login/Sign Up'.  There will also be some large text and an entry box where you can type in the name of a book to search for and a button that lets you summit your input.
 
-[!image showing the homepage when it is first loaded](https://github.com/KitKatBar/book-search-engine-challenge/blob/main/images/homepage-initial.png?raw=true)
+![image showing the homepage when it is first loaded](https://github.com/KitKatBar/book-search-engine-challenge/blob/main/images/homepage-initial.png?raw=true)
 
 Navigating to 'Google Books Search' or 'Search For Books' does nothing because they redirect you to the homepage, which you are already on.  Attempting to search for books while not logged in will yield search results, but you won't be able to save any of these books.
 
-[!image showing what happens if you search for books while not logged in](https://github.com/KitKatBar/book-search-engine-challenge/blob/main/images/search-books-not-logged-in.png?raw=true)
+![image showing what happens if you search for books while not logged in](https://github.com/KitKatBar/book-search-engine-challenge/blob/main/images/search-books-not-logged-in.png?raw=true)
 
 When clicking on the 'Login/Sign Up' button, a modal will appear that lets the user login or sign up with an account.
 
-[!image showing the login modal](https://github.com/KitKatBar/book-search-engine-challenge/blob/main/images/login-modal.png?raw=true)
+![image showing the login modal](https://github.com/KitKatBar/book-search-engine-challenge/blob/main/images/login-modal.png?raw=true)
 
-[!image showing the sign up modal](https://github.com/KitKatBar/book-search-engine-challenge/blob/main/images/sign-up-modal.png?raw=true)
+![image showing the sign up modal](https://github.com/KitKatBar/book-search-engine-challenge/blob/main/images/sign-up-modal.png?raw=true)
 
 Since we don't have an account yet, lets sign up for one.  The form takes in the fields of a 'Username', 'Email' and 'Password'.  There are some minor validations on the 'Username' and 'Email' fields.  Both the 'Username' and 'Email' must be unique (meaning no one else has already registered with it) and the 'Email' uses a regex pattern to ensure that it is in the required format similar to something like 'your-name@your-domain.com'.  Attempting to submit the form with validation errors will result in a failed message.  While the error message should be more specific (I didn't write this so don't blame me), for demo purposes it is good enough for the time being.
 
-[!image showing an error message when signing up with validation errors](https://github.com/KitKatBar/book-search-engine-challenge/blob/main/images/sign-up-error.png?raw=true)
+![image showing an error message when signing up with validation errors](https://github.com/KitKatBar/book-search-engine-challenge/blob/main/images/sign-up-error.png?raw=true)
 
 Note that logging in with the wrong credentials will also display the same error message.
 
 Once you have signed up, you will automatically be logged in and you'll see that your navigation bar has slightly changed.  There is an additional link to 'See Your Books' and the 'Login/Sign Up' will be replaced with a 'Logout'.
 
-[!image showing the homepage when logged in](https://github.com/KitKatBar/book-search-engine-challenge/blob/main/images/homepage-logged-in.png?raw=true)
+![image showing the homepage when logged in](https://github.com/KitKatBar/book-search-engine-challenge/blob/main/images/homepage-logged-in.png?raw=true)
 
 When you search for books, you'll now see that you have the option to save these books.
 
-[!image showing what happens if you search for books while logged in](https://github.com/KitKatBar/book-search-engine-challenge/blob/main/images/search-books-logged-in.png?raw=true)
+![image showing what happens if you search for books while logged in](https://github.com/KitKatBar/book-search-engine-challenge/blob/main/images/search-books-logged-in.png?raw=true)
 
 When you click on the 'Save this Book!' button, this book will get added to your list and it will be replaced with text reading 'This book has already been saved!' which is tinted out and cannot be interacted with.  This is to prevent having duplicate books added to your list.
 
-[!image showing what happens when you save a book](https://github.com/KitKatBar/book-search-engine-challenge/blob/main/images/search-books-saved.png?raw=true)
+![image showing what happens when you save a book](https://github.com/KitKatBar/book-search-engine-challenge/blob/main/images/search-books-saved.png?raw=true)
 
 When you navigation to the 'See Your Books' tab now, you'll see that the books you have saved appear in the list.  There will also be a 'Delete this Book!' button which allows you to delete the book and remove it from your list.  You can add it again if you wish.
 
-[!image showing all your saved books](https://github.com/KitKatBar/book-search-engine-challenge/blob/main/images/saved-books.png?raw=true)
+![image showing all your saved books](https://github.com/KitKatBar/book-search-engine-challenge/blob/main/images/saved-books.png?raw=true)
 
 That's pretty much a detailed look at all the functionalities that this application offers so I hope you enjoy playing around and tinkering with it!
 
